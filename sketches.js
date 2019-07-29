@@ -13,3 +13,12 @@ gradient([1, 5, 1])
   .add(osc(4, 1, 9))
   .add(voronoi(200, 4, 100))
   .out(o0)
+
+//Playing with noise and modulation
+// by Nyx while listening to LION BABE - Jump
+
+noise(1, 0.5)
+  .modulate(osc(10, 1, 5))
+  .color(5, 0.2, 0.3)
+  .add(voronoi(50, 3))
+  .out(o0)
